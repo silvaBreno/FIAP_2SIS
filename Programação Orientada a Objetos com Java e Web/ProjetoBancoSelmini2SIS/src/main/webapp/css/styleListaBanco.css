@@ -1,0 +1,125 @@
+@charset "ISO-8859-1";
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #55608f;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+fieldset
+{
+  background-color:#ffffff4d;
+}
+
+legend{
+	color: #fff;
+	font-weight: bold;
+	background-color: #55608f;
+}
+
+h4{
+	color: #fff;
+	font-weight: bold;
+	width: 20%;
+	margin-left: 15px;
+	/*border: 1px solid green;	*/
+}
+
+.bloco_inicial{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #55608f;
+	/*border: 1px solid pink;*/		
+}
+
+.bloco_inicial_interno{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	/*border: 1px solid purple;*/
+}
+
+#botaoPersonalizado {
+    /*background-color: #2145ba;*/
+   /* background-color: #2145BA;*/
+    border:none;
+    color:#fff;
+   	text-decoration:none;
+    background-color:#6c4089;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: 0 0.45rem;
+    margin: 0 0.45rem;
+    border-radius:20px;
+}
+
+#botaoPersonalizado:hover {
+    /*background-color: #007ACF;*/
+    /*background-color: #2145bac6;*/
+    background-color:  #5f2c82;
+}
+
+#botaoAlterar{
+	border:none;
+	color:#fff;
+   	text-decoration:none;
+   	background-color:#55608f;
+   	border-radius:20px;
+    margin: 0 0.45rem;
+    padding-top:0.15rem;
+}
+
+#botaoAlterar:hover{
+	background-color:#404e8d;
+}
